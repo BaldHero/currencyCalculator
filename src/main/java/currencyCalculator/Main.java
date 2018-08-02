@@ -7,5 +7,6 @@ public class Main {
 
         UserInput userInput = new UserInput();
         System.out.println(userInput.getAvgRate());
+        userInput.howMuchFor100Pln(userInput.getCurrency());
     }
 }

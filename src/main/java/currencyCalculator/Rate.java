@@ -4,7 +4,8 @@ public class Rate {
 
     private String no;
     private String effectiveDate;
-    private double mid;
+    private double bid;
+    private double ask;
 
     public String getNo() {
         return this.no;
@@ -22,12 +23,20 @@ public class Rate {
         this.effectiveDate = effectiveDate;
     }
 
-    public double getMid() {
-        return this.mid;
+    public double getBid() {
+        return this.bid;
     }
 
-    public void setMid(double mid) {
-        this.mid = mid;
+    public void setBid(double bid) {
+        this.bid = bid;
+    }
+
+    public double getAsk() {
+        return this.ask;
+    }
+
+    public void setAsk(double ask) {
+        this.ask = ask;
     }
 
     @Override
@@ -35,7 +44,8 @@ public class Rate {
         return "Rate{" +
                 "no='" + no + '\'' +
                 ", effectiveDate='" + effectiveDate + '\'' +
-                ", mid=" + mid +
+                ", bid=" + bid +
+                ", ask=" + ask +
                 '}';
     }
 }
